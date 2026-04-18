@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jli kurdi Hariwan</title>
+    <title>جلی کوردی هاریوان</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-gold: #d4af37;
@@ -14,7 +15,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
             background-color: #0b0f19;
             background-image: url('photo.jpg'); 
             background-size: cover; 
@@ -23,13 +24,24 @@
             background-attachment: fixed;
             color: var(--text-main);
             display: flex;
-            justify-content: center;
-            align-items: flex-end; 
-            padding-bottom: 15px; /* کەمتر کرا کەمتر کرایەوە بۆ ئەوەی نزمتر بێت */
+            flex-direction: column; /* بۆ ئەوەی نوسین سەرەوە بێت و دوگمەکان خوارەوە */
+            align-items: center;
+            justify-content: space-between; /* دابەشکردنی بۆشایی لە نێوانیان */
             min-height: 100vh;
             min-height: 100dvh;
             margin: 0;
+            padding: 60px 0 20px 0; /* بۆشایی سەرەوە بۆ نوسینەکە و خوارەوە بۆ کارتەکە */
             box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 28px; /* کەمێک گەورەتر بۆ ئەوەی دیار بێت */
+            margin: 0;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.9);
+            font-weight: 700;
         }
 
         .card {
@@ -40,18 +52,10 @@
             -webkit-backdrop-filter: blur(8px);
             border: 1px solid var(--glass-border);
             border-radius: 35px;
-            padding: 35px 25px;
+            padding: 30px 25px;
             text-align: center;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
-            font-size: 22px;
-            margin: 10px 0 25px 0;
-            color: var(--primary-gold);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 0 6px 10px rgba(0,0,0,0.8);
+            margin-bottom: 20px; /* مەودایەک لە لێواری خوارەوە */
         }
 
         .btn-list {
@@ -119,7 +123,7 @@
         .sub-btn:last-child { border: none; }
 
         .footer {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 10px;
             color: #ffffff;
             letter-spacing: 2px;
@@ -129,30 +133,30 @@
 </head>
 <body>
 
-    <div class="card">
-        <h1>Jli kurdi Hariwan</h1>
+    <h1>جلی کوردی هاریوان</h1>
 
+    <div class="card">
         <div class="btn-list">
             
             <a href="https://www.instagram.com/paroket_hariwan?igsh=YjIxNTQ1MXQwNmJy&utm_source=qr" class="btn instagram" target="_blank" rel="noopener">
                 <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
+                <span>ئینستاگرام</span>
             </a>
 
             <a href="https://www.tiktok.com/@hariwan.hussein.barwari?_r=1&_t=ZS-95df0KtB4vS" class="btn tiktok" target="_blank" rel="noopener">
                 <i class="fab fa-tiktok"></i>
-                <span>TikTok</span>
+                <span>تیکتۆک</span>
             </a>
 
             <a href="https://snapchat.com/t/6xkaMfrZ" class="btn snapchat" target="_blank" rel="noopener">
                 <i class="fab fa-snapchat"></i>
-                <span>Snapchat</span>
+                <span>سناپچات</span>
             </a>
 
             <details>
                 <summary class="btn whatsapp">
                     <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
+                    <span>واتسئەپ</span>
                 </summary>
                 <div class="dropdown-content">
                     <a href="https://wa.me/9647504280337" class="sub-btn" target="_blank">کۆڕەک: 07504280337</a>

@@ -40,8 +40,7 @@
             color: var(--primary-gold);
             font-weight: 700; 
             white-space: nowrap;
-            /* باشترین ڕێگە بۆ Stroke لە وێب بێ ئەوەی پیتەکە تێک بچێت */
-            -webkit-text-stroke: 5px black;
+            -webkit-text-stroke: 1.5px black; /* کەمێک کەمم کردەوە بۆ ئەوەی پیتەکان نەشارێتەوە */
             paint-order: stroke fill;
             text-shadow: 
                 2px 2px 0 #000,
@@ -96,6 +95,7 @@
         .tiktok { background: rgba(0, 0, 0, 0.7); }
         .snapchat { background: #FFFC00; color: #000; border: none; font-weight: 600; }
         .whatsapp { background: rgba(37, 211, 102, 0.85); }
+        .location { background: rgba(52, 168, 83, 0.85); } /* ڕەنگی سەوز بۆ لۆکەیشن */
 
         .btn i { font-size: 20px; width: 35px; text-align: center; }
         .btn span { flex-grow: 1; text-align: center; padding-right: 15px; font-family: 'Segoe UI', Tahoma, sans-serif; }
@@ -160,6 +160,11 @@
                 <span>Snapchat</span>
             </a>
 
+            <a href="https://maps.app.goo.gl/8EkKnUWEKsJEAQtDA" class="btn location" target="_blank" rel="noopener">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Location</span>
+            </a>
+
             <details>
                 <summary class="btn whatsapp">
                     <i class="fab fa-whatsapp"></i>
@@ -176,5 +181,7 @@
         <div class="footer">
             POWERED BY SUNFLOWER WEB
         </div>
+    </div>
 
-        
+</body>
+</html>
